@@ -24,38 +24,9 @@ struct ContentView: View {
         
         VStack {
             Spacer()
-            
-            Group{
-                
-                Text("Active Time")
-                
-                HStack {
-                    //Active Minutes
-                    Picker(
-                        selection: $activeMinutes,
-                        label: Text("AS"),
-                        content: {
-                            ForEach(0..<61) {number in
-                                Text("\(number)")
-                                    .tag("\(number)")
-                            }
-                    }).pickerStyle(MenuPickerStyle())
-
-                    Text(":")
-
-                    //Active Seconds
-                    Picker(
-                        selection: $activeSeconds,
-                        label: Text("FS"),
-                        content: {
-                            ForEach(0..<61) {number in
-                                Text("\(number)")
-                                    .tag("\(number)")
-                            }
-                        }).pickerStyle(MenuPickerStyle())
-                }
-            }
-
+        
+            Text("Active Time")
+        
             Spacer()
             
             Group{
