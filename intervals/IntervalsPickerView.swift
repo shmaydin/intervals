@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TimerSettingView: View {
+struct IntervalsPickerView: View {
     
     @Binding var tMinutes: Int
     @Binding var tSeconds: Int
@@ -24,11 +24,11 @@ struct TimerSettingView: View {
                     label: Text("Minutes")) {
                         ForEach(0..<61) {number in
                             Text("\(number)" + " min")
-                                .tag("\(number)")
+                                .tag(number)
                         }
                 }
                     .pickerStyle(WheelPickerStyle())
-                    .frame(width: geometry.size.width/2, height: geometry.size.height, alignment: .center)
+                    .frame(width: geometry.size.width/2, height: 150, alignment: .center)
                     .compositingGroup()
                     .clipped()
 
@@ -39,22 +39,23 @@ struct TimerSettingView: View {
                     label: Text("Seconds")) {
                         ForEach(0..<61) {number in
                             Text("\(number)" + " sec")
-                                .tag("\(number)")
+                                .tag(number)
                         }
                     }
                         .pickerStyle(WheelPickerStyle())
-                        .frame(width: geometry.size.width/2, height: geometry.size.height, alignment: .center)
+                        .frame(width: geometry.size.width/2, height: 150, alignment: .center)
                         .compositingGroup()
                         .clipped()
             }
         }
+        .frame(height: 150, alignment: .center)
     }
 }
 
 
 struct TimerSettingView_Previews: PreviewProvider {
     static var previews: some View {
-        TimerSettingView(tMinutes: Binding.constant(0), tSeconds: Binding.constant(0))
+        IntervalsPickerView(tMinutes: Binding.constant(0), tSeconds: Binding.constant(0))
 .previewInterfaceOrientation(.portrait)
     }
 }
