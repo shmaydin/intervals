@@ -9,7 +9,9 @@ import SwiftUI
 
 struct SetsPickerView: View {
     
-    @Binding var numSets: Int
+    //@Binding var numSets: Int
+    
+    @EnvironmentObject var timerData: TimerSetting
     
     var body: some View {
 
@@ -18,7 +20,7 @@ struct SetsPickerView: View {
             Text("Number of sets:")
             
             Picker(
-                selection: $numSets,
+                selection: $timerData.numSets,
                 label: Text("Sets")) {
                     ForEach(0..<11) {number in
                         Text("\(number)" + " Sets")
@@ -32,6 +34,6 @@ struct SetsPickerView: View {
 
 struct SetsPickerView_Previews: PreviewProvider {
     static var previews: some View {
-        SetsPickerView(numSets: Binding.constant(0))
+        SetsPickerView()
     }
 }

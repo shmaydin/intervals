@@ -11,6 +11,7 @@ struct IntervalsPickerView: View {
     
     @Binding var tMinutes: Int
     @Binding var tSeconds: Int
+    //@EnvironmentObject var timerData: TimerSetting
     
     
     var body: some View {

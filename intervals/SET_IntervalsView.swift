@@ -17,33 +17,35 @@ struct SET_IntervalsView: View {
     @State var breakSeconds: Int = 10
     @State var breakMinutes: Int = 0
     
+    @EnvironmentObject var timerData: TimerSetting
+    
     
     var body: some View {
-        NavigationView{
-            VStack {
-                Text("Active Time")
-                
-                IntervalsPickerView(tMinutes: $activeMinutes, tSeconds: $activeSeconds)
-                
-                Spacer()
-                
-                
-                Text("Break Time")
-                IntervalsPickerView(tMinutes: $breakMinutes, tSeconds: $breakSeconds)
-                
-                Spacer()
-                    .navigationTitle("Set Intervals")
-                
-                NavigationLink(destination: SET_SetsAndWarmupView(), label: {
-                    Text("Next Screen")
-                        .bold()
-                        .frame(width: 150, height: 50)
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                })
-                //Spacer()
-            }
+        
+        VStack {
+            Spacer()
+            
+            Text("Active Time")
+            IntervalsPickerView(tMinutes: $timerData.activeTime.minutes, tSeconds: $timerData.activeTime.seconds)
+            
+            Spacer()
+            
+            Text("Break Time")
+            IntervalsPickerView(tMinutes: $timerData.breakTime.minutes, tSeconds: $timerData.breakTime.seconds)
+            
+            Spacer()
+                .navigationTitle("Set Intervals")
+                .navigationBarTitleDisplayMode(.inline)
+            
+            NavigationLink(destination: SET_SetsAndWarmupView(), label: {
+                Text("Next Screen")
+                    .bold()
+                    .frame(width: 150, height: 50)
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            })
+            //Spacer()
         }
     }
 }

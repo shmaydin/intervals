@@ -10,7 +10,9 @@ import SwiftUI
 struct SET_SetsAndWarmupView: View {
     
     @State var warmupMinutes: Int = 0
-    @State var numSets: Int = 3
+    //@State var numSets: Int = 3
+    
+    @EnvironmentObject var timerData: TimerSetting
     
     var body: some View {
         
@@ -18,19 +20,19 @@ struct SET_SetsAndWarmupView: View {
             
             Spacer()
             
-            WarmupCooldownView(warmupMinutes: $warmupMinutes)
+            WarmupCooldownView(warmupMinutes: $timerData.warmupTime.minutes)
             
             Spacer()
             
             
-            SetsPickerView(numSets: $numSets)
+            SetsPickerView()
             
             Spacer()
                 .navigationTitle("Additional Info")
                 .navigationBarTitleDisplayMode(.inline)
             
-            NavigationLink(destination: Text("Running Timer Screen"), label: {
-                Text("Next Screen")
+            NavigationLink(destination: Text("Active Seconds = \(timerData.activeTime.seconds)"), label: {
+                Text("Start Exercise")
                     .bold()
                     .frame(width: 150, height: 50)
                     .background(Color.blue)

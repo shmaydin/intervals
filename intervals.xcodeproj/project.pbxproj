@@ -11,6 +11,9 @@
 		DB5DB35227D4FA2E002A3221 /* WarmupCooldownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5DB35127D4FA2E002A3221 /* WarmupCooldownView.swift */; };
 		DB5DB35427D4FB98002A3221 /* SetsPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5DB35327D4FB98002A3221 /* SetsPickerView.swift */; };
 		DB5DB35627D4FD20002A3221 /* SET_SetsAndWarmupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5DB35527D4FD20002A3221 /* SET_SetsAndWarmupView.swift */; };
+		DB5DB35827D6AE8B002A3221 /* IntervalClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5DB35727D6AE8B002A3221 /* IntervalClass.swift */; };
+		DB5DB35A27D6B28D002A3221 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5DB35927D6B28D002A3221 /* MainScreenView.swift */; };
+		DB5DB35C27D6B506002A3221 /* TimerSettingsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5DB35B27D6B506002A3221 /* TimerSettingsClass.swift */; };
 		DB9D6CA027D3E7570041E575 /* intervalsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D6C9F27D3E7570041E575 /* intervalsApp.swift */; };
 		DB9D6CA227D3E7570041E575 /* SET_IntervalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D6CA127D3E7570041E575 /* SET_IntervalsView.swift */; };
 		DB9D6CA427D3E75A0041E575 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB9D6CA327D3E75A0041E575 /* Assets.xcassets */; };
@@ -22,6 +25,9 @@
 		DB5DB35127D4FA2E002A3221 /* WarmupCooldownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmupCooldownView.swift; sourceTree = "<group>"; };
 		DB5DB35327D4FB98002A3221 /* SetsPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetsPickerView.swift; sourceTree = "<group>"; };
 		DB5DB35527D4FD20002A3221 /* SET_SetsAndWarmupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SET_SetsAndWarmupView.swift; sourceTree = "<group>"; };
+		DB5DB35727D6AE8B002A3221 /* IntervalClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalClass.swift; sourceTree = "<group>"; };
+		DB5DB35927D6B28D002A3221 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
+		DB5DB35B27D6B506002A3221 /* TimerSettingsClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerSettingsClass.swift; sourceTree = "<group>"; };
 		DB9D6C9C27D3E7570041E575 /* intervals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = intervals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB9D6C9F27D3E7570041E575 /* intervalsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intervalsApp.swift; sourceTree = "<group>"; };
 		DB9D6CA127D3E7570041E575 /* SET_IntervalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SET_IntervalsView.swift; sourceTree = "<group>"; };
@@ -59,8 +65,11 @@
 		DB9D6C9E27D3E7570041E575 /* intervals */ = {
 			isa = PBXGroup;
 			children = (
-				DB5DB35527D4FD20002A3221 /* SET_SetsAndWarmupView.swift */,
 				DB9D6C9F27D3E7570041E575 /* intervalsApp.swift */,
+				DB5DB35927D6B28D002A3221 /* MainScreenView.swift */,
+				DB5DB35B27D6B506002A3221 /* TimerSettingsClass.swift */,
+				DB5DB35727D6AE8B002A3221 /* IntervalClass.swift */,
+				DB5DB35527D4FD20002A3221 /* SET_SetsAndWarmupView.swift */,
 				DB5DB34F27D44807002A3221 /* IntervalsPickerView.swift */,
 				DB9D6CA127D3E7570041E575 /* SET_IntervalsView.swift */,
 				DB5DB35127D4FA2E002A3221 /* WarmupCooldownView.swift */,
@@ -150,11 +159,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB9D6CA227D3E7570041E575 /* SET_IntervalsView.swift in Sources */,
+				DB5DB35C27D6B506002A3221 /* TimerSettingsClass.swift in Sources */,
 				DB9D6CA027D3E7570041E575 /* intervalsApp.swift in Sources */,
 				DB5DB35027D44807002A3221 /* IntervalsPickerView.swift in Sources */,
+				DB5DB35827D6AE8B002A3221 /* IntervalClass.swift in Sources */,
 				DB5DB35627D4FD20002A3221 /* SET_SetsAndWarmupView.swift in Sources */,
 				DB5DB35427D4FB98002A3221 /* SetsPickerView.swift in Sources */,
 				DB5DB35227D4FA2E002A3221 /* WarmupCooldownView.swift in Sources */,
+				DB5DB35A27D6B28D002A3221 /* MainScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,7 @@ import SwiftUI
 struct intervalsApp: App {
     var body: some Scene {
         WindowGroup {
-            SET_IntervalsView()
+            MainScreenView()
         }
     }
 }
