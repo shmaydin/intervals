@@ -31,7 +31,7 @@ struct SET_SetsAndWarmupView: View {
                 .navigationTitle("Additional Info")
                 .navigationBarTitleDisplayMode(.inline)
             
-            NavigationLink(destination: Text("Active Seconds = \(timerData.activeTime.seconds)"), label: {
+            NavigationLink(destination: SHOW_TimerView(), label: {
                 Text("Start Exercise")
                     .bold()
                     .frame(width: 150, height: 50)
