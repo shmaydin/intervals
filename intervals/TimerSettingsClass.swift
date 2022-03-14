@@ -16,21 +16,21 @@ class TimerSetting: ObservableObject {
     @Published var warmupTime: Interval = Interval()
     @Published var numSets: Int = 3
     
-    @Published var durringActiveTime: Bool = true
+    @Published var isActiveTime: Bool = true
     
     init(){
-        self.activeTime.minutes = 1
-        self.activeTime.seconds = 0
+        self.activeTime.minutes = 0
+        self.activeTime.seconds = 5
         
         self.breakTime.minutes = 0
-        self.breakTime.seconds = 5
+        self.breakTime.seconds = 2
         
-        self.numSets = 3
+        self.numSets = 2
         
         self.warmupTime.minutes = 0
         self.warmupTime.seconds = 0
         
-        self.durringActiveTime = true
+        self.isActiveTime = true
     }
     
 //    //Run Timer method
