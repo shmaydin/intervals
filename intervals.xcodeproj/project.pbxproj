@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F4B0D8A27DD38110025DEA5 /* timerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4B0D8927DD38110025DEA5 /* timerView.swift */; };
 		DB5DB35027D44807002A3221 /* IntervalsPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5DB34F27D44807002A3221 /* IntervalsPickerView.swift */; };
 		DB5DB35227D4FA2E002A3221 /* WarmupCooldownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5DB35127D4FA2E002A3221 /* WarmupCooldownView.swift */; };
 		DB5DB35427D4FB98002A3221 /* SetsPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5DB35327D4FB98002A3221 /* SetsPickerView.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F4B0D8927DD38110025DEA5 /* timerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerView.swift; sourceTree = "<group>"; };
 		DB5DB34F27D44807002A3221 /* IntervalsPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalsPickerView.swift; sourceTree = "<group>"; };
 		DB5DB35127D4FA2E002A3221 /* WarmupCooldownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmupCooldownView.swift; sourceTree = "<group>"; };
 		DB5DB35327D4FB98002A3221 /* SetsPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetsPickerView.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 		DB9D6C9E27D3E7570041E575 /* intervals */ = {
 			isa = PBXGroup;
 			children = (
+				3F4B0D8927DD38110025DEA5 /* timerView.swift */,
 				DB5DB35D27D825C6002A3221 /* SHOW_TimerView.swift */,
 				DB9D6C9F27D3E7570041E575 /* intervalsApp.swift */,
 				DB5DB35927D6B28D002A3221 /* MainScreenView.swift */,
@@ -164,6 +167,7 @@
 				DB9D6CA227D3E7570041E575 /* SET_IntervalsView.swift in Sources */,
 				DB5DB35C27D6B506002A3221 /* TimerSettingsClass.swift in Sources */,
 				DB9D6CA027D3E7570041E575 /* intervalsApp.swift in Sources */,
+				3F4B0D8A27DD38110025DEA5 /* timerView.swift in Sources */,
 				DB5DB35027D44807002A3221 /* IntervalsPickerView.swift in Sources */,
 				DB5DB35827D6AE8B002A3221 /* IntervalClass.swift in Sources */,
 				DB5DB35E27D825C6002A3221 /* SHOW_TimerView.swift in Sources */,
